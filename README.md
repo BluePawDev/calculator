@@ -13,11 +13,12 @@ Welcome to your second weekend challenge!
 IMPORTANT: The logic for the calculation needs to be implemented on the Server.
 
 ## Front-end
-The Front End will display
+### Display
+* Two values using input fields;
+* Four command buttons to select the desired mathematical operation (e.g. addition, subtraction, multiplication, and division) to use on the two input values, and;
+* A clear button that resets the input fields
 
-two values (use input fields)
-the types of mathematical operations (using button's): add, subtract, divide, multiply
-a clear button will empty the input fields
+### Action
 The Client will be bundle up the inputs and mathematical operator into an object and then send it to the server via a POST request. So when the object leaves the Client, it should look something like this:
 
 {
