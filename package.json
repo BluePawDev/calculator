@@ -1,0 +1,28 @@
+{
+  "name": "weekend-challenge-2",
+  "version": "1.0.0",
+  "description": "calculator built on JEN stack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BluePawDev/weekend-challenge-2.git"
+  },
+  "keywords": [
+    "javascript",
+    "express",
+    "node",
+    "ajax"
+  ],
+  "author": "Jason Ruby",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BluePawDev/weekend-challenge-2/issues"
+  },
+  "homepage": "https://github.com/BluePawDev/weekend-challenge-2#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
