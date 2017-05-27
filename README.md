@@ -1,10 +1,5 @@
-# weekend-challenge-2
-weekend-challenge-2
-
 # Weekend Challenge 2
-Welcome to your second weekend challenge!
-
-## Technologies
+## Technologies Implemented
 * JavaScript/jQuery
 * Node.js
 * Express.js
