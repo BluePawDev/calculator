@@ -4,17 +4,20 @@
 * Node.js
 * Express.js
 
-## Front-end/Client Functionality & Server Logic
-IMPORTANT: The logic for the calculation needs to be implemented on the Server.
-
-## Front-end
-### Display
+### Front-end
+#### Display
 * Two values using input fields;
 * Four command buttons to select the desired mathematical operation (e.g. addition, subtraction, multiplication, and division) to use on the two input values, and;
 * A clear button that resets the input fields
 
-### Action
-The Client will be bundle up the inputs and mathematical operator into an object and then send it to the server via a POST request. So when the object leaves the Client, it should look something like this:
+#### Action/Logic
+##### Client-side
+The client submits a Ajax POST which places the:
+* Two input values, and;
+* The selected mathematical operator
+Into an object sent to the server.
+
+will be bundle up the inputs and mathematical operator into an object and then send it to the server via a POST request. So when the object leaves the Client, it should look something like this:
 
 {
    x: 3,
@@ -50,3 +53,6 @@ During that delay, show a message that says computing until the 3 second delay h
 Submitting this Assignment
 Create a README.md explaining what your application does
 Submit via the assignment app
+
+## Front-end/Client Functionality & Server Logic
+IMPORTANT: The logic for the calculation needs to be implemented on the Server.
