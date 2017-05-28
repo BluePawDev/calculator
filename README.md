@@ -14,8 +14,8 @@
 ##### Client-side
 * The client evaluates to ensure values are supplied in both input fields;
 * If values are present, the client submits a Ajax POST which places the:
-* Two input values, and;
-* The value of the selected mathematical operator into an object defined by the mathematical that is selected;
+  * Two input values, and;
+  * The value of the selected mathematical operator into an object defined by the mathematical that is selected;
 * The object is then sent to the server for calculation
 
 ##### Server-side
