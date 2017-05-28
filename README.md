@@ -14,16 +14,15 @@
 ##### Client-side
 The client submits a Ajax POST which places the:
 * Two input values, and;
-* The selected mathematical operator
-Into an object sent to the server.
+* The value of the selected mathematical operator into an object defined by the mathematical that is selected;
+* The object is then sent to the server for calculation
 
-will be bundle up the inputs and mathematical operator into an object and then send it to the server via a POST request. So when the object leaves the Client, it should look something like this:
+##### Server-side
+The server--configured on port 7500--receives POST requests:
+* On URL-specific routes depending on the mathematical operator selected on the front-end;
+* After converting the object inputs into numeric values, performs the requested/required mathematical operation, then;
+* Performs a ```res.send``` of the result back to the client
 
-{
-   x: 3,
-   y: 4,
-   type: "add"
-}
 Once the Server receives the request, it will compute the numbers in one of four different ways:
 
 addition,
