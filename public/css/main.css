@@ -32,3 +32,18 @@ h3{
   height: 40px;
   box-shadow: 0 6px 4px 0 rgba(0,0,0,0.2), 0 6px 4px 0 rgba(0,0,0,0.19);
 }
+
+.clear{
+  width: 100px;
+  margin-top: 10px;
+}
+
+.results{
+  border: none;
+  text-align: center;
+  width: 60px;
+}
+
+.inputResult {
+  text-align: center;
+}
