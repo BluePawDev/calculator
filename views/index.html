@@ -5,18 +5,59 @@
   <meta charset="utf-8">
   <script type="text/javascript" src="vendors/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="scripts/script.js"></script>
-  <link rel="stylesheet" href="../css/normalize.css">
-  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
   <title>WC 2: Calculator</title>
 </head>
 
 <body class="base">
   <h1 class="heading">Weekend Challenge 2</h1>
-  <h2 class="heading">Calculator</h2>
-  <div id="calc">
-    Calculator will appear here
+  <h3 class="heading">Calculator by Input</h3>
 
+  <div id="rowOne" class="row rowOne">
+    <input type="text" id="txtInputOne" class="input" name="inputOne" placeholder="value 1" value="">
+    <input type="text" id="txtInputTwo" class="input" name="inputTwo" placeholder="value 2" value="">
+    <br>
+    <button type="button" id="cmdDivide" class="button" name="divide">&divide;</button>
+    <button type="button" id="cmdMultiply" class="button" name="multiply">&times;</button>
+    <button type="button" id="cmdSubtrct" class="button" name="subtract">&minus;</button>
+    <button type="button" id="cmdAdd" class="button" name="add">+</button>
   </div>
+  <!-- end of #rowOne div -->
+
+  <div id="rowTwo" class="row">
+    <h3 class="heading">Calculator by Button</h3>
+    <h5 class="heading">(Nonfunctional)</h5>
+    <button type="button" class="button" name="seven">7</button>
+    <button type="button" class="button" name="eight">8</button>
+    <button type="button" class="button" name="nine">9</button>
+    <button type="button" class="button" name="divide">&divide;</button>
+  </div>
+  <!-- end of #rowTwo div -->
+
+  <div id="rowThree" class="row">
+    <button type="button" class="button" name="four">4</button>
+    <button type="button" class="button" name="five">5</button>
+    <button type="button" class="button" name="six">6</button>
+    <button type="button" class="button" name="multiply">&times;</button>
+  </div>
+  <!-- end of #rowThree div -->
+
+  <div id="rowFour" class="row">
+    <button type="button" class="button" name="one">1</button>
+    <button type="button" class="button" name="two">2</button>
+    <button type="button" class="button" name="three">3</button>
+    <button type="button" class="button" name="subtract">&minus;</button>
+  </div>
+  <!-- end of #rowFour div -->
+
+  <div id="rowFive" class="row">
+    <button type="button" class="button" name="all-clear">AC</button>
+    <button type="button" class="button" name="zero">0</button>
+    <button type="button" class="button" name="equal">=</button>
+    <button type="button" class="button" name="add">+</button>
+  </div>
+  <!-- end of #rowFive div -->
 
 </body>
 

@@ -1,5 +1,5 @@
 # Weekend Challenge 2
-## Technologies Implemented
+### Technologies Implemented
 * JavaScript/jQuery
 * Node.js
 * Express.js

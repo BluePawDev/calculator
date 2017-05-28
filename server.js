@@ -2,7 +2,11 @@
 var express = require('express');
 var app = express();
 var path = require('path');
+var bodyParser = require('body-parser');
 
+// Users
+app.use(express.static('public'));
+app.use(bodyParser.urlencoded({extended: true}));
 
 // Listen
 app.listen(7500, function(){

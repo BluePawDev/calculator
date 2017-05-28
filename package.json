@@ -4,7 +4,8 @@
   "description": "calculator built on JEN stack",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,8 @@
   },
   "homepage": "https://github.com/BluePawDev/weekend-challenge-2#readme",
   "dependencies": {
+    "body-parser": "^1.17.2",
     "express": "^4.15.3"
-  }
+  },
+  "devDependencies": {}
 }
