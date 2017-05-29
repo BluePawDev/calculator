@@ -191,7 +191,7 @@ function onReady() {
     return $('#txtInputOneA').val(value);
   });
 
-  // start of cmdDivide on-click
+  // start of cmdD on-click
   $('#cmdD').on('click', function() {
     valueOne = value;
     value = '';
@@ -199,7 +199,49 @@ function onReady() {
     $('#txtInputOneA').val('');
     console.log('valueOne is:', valueOne);
     console.log('value is:', value);
-  }); // end of cmdDivide on-click
+  }); // end of cmdD on-click
+
+  // start of cmdM on-click
+  $('#cmdM').on('click', function() {
+    valueOne = value;
+    value = '';
+    operation = 'multiply';
+    $('#txtInputOneA').val('');
+    console.log('valueOne is:', valueOne);
+    console.log('value is:', value);
+  }); // end of cmdM on-click
+
+  // start of cmdS on-click
+  $('#cmdS').on('click', function() {
+    valueOne = value;
+    value = '';
+    operation = 'subtract';
+    $('#txtInputOneA').val('');
+    console.log('valueOne is:', valueOne);
+    console.log('value is:', value);
+  }); // end of cmdS on-click
+
+  // start of cmdA on-click
+  $('#cmdA').on('click', function() {
+    valueOne = value;
+    value = '';
+    operation = 'add';
+    $('#txtInputOneA').val('');
+    console.log('valueOne is:', valueOne);
+    console.log('value is:', value);
+  }); // end of cmdA on-click
+
+  // start of cmdAC on-click
+  $('#cmdAC').on('click', function() {
+    valueOne = '';
+    value = '';
+    valueTwo = '';
+    operation = '';
+    $('#txtInputOneA').val('');
+    console.log('valueOne is:', valueOne);
+    console.log('value is:', value);
+  }); // end of cmdAC on-click
+
 
   $('#cmdEqual').on('click', function() {
     valueTwo = value;

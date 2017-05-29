@@ -66,12 +66,17 @@ app.post('/fullCalculator', function(req, res){
   }
   else if (req.body.actType === 'multiply') {
     responseFull = numOne * numTwo;
+    responseFull = String(responseFull);
   }
   else if (req.body.actType === 'subtract') {
     responseFull = numOne - numTwo;
+    responseFull = String(responseFull);
+
   }
   else {
     responseFull = numOne + numTwo;
+    responseFull = String(responseFull);
+
   }
   console.log(responseFull);
   res.send(responseFull);
