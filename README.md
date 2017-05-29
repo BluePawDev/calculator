@@ -27,11 +27,13 @@ The server--configured on port 7500--receives POST requests:
 
 
 ## HARD MODE
-Convert the input fields for the two values to buttons. This experience would allow the user to:
-* click on a numerical button
-* click on a mathematical operator
-* click on a numerical button
-* click on an equal button that sends all of the information to the server
+### Front-end Interface/Display
+* Basic full-function calculator interface
+
+#### Action/Logic
+##### Client-side and Server-side
+* The general logic remains the same as in base mode
+
 
 ## PRO MODE
 Create a delay from when the Client receives the response from the Server, and when the calculation is actually displayed on the Front End:
