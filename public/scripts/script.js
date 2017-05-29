@@ -129,6 +129,7 @@ function onReady() {
   var value = '';
   var valueOne = '';
   var valueTwo = '';
+  var operation = '';
 
   $('#cmd7').on('click', function() {
     value += '7';
@@ -184,10 +185,17 @@ function onReady() {
     return $('#txtInputOneA').val(value);
   });
 
+  $('#cmd0').on('click', function() {
+    value += '0';
+    console.log('cmd0 clicked:', value);
+    return $('#txtInputOneA').val(value);
+  });
+
   // start of cmdDivide on-click
   $('#cmdD').on('click', function() {
     valueOne = value;
     value = '';
+    operation = 'divide';
     $('#txtInputOneA').val('');
     console.log('valueOne is:', valueOne);
     console.log('value is:', value);
@@ -199,19 +207,20 @@ function onReady() {
     console.log('valueTwo is:', valueTwo);
     console.log('value is:', value);
     // define obj to POST on divide
-    var objToDivideA = {
+    var objToOperate = {
       numOne: valueOne,
       numTwo: valueTwo,
-      actType: 'divide'
+      actType: operation
     }; // end of obj to divide
     // Ajax POST toDivide definition
     $.ajax({
       type: 'POST',
-      url: '/toDivideA',
-      data: objToDivideA,
+      url: '/fullCalculator',
+      data: objToOperate,
       // define success
       success: function(response) {
-        $('#txtInputOneA').val(response.resultDivA);
+        console.log(response);
+        $('#txtInputOneA').val(response);
       } // end of success definition
     }); // end of Ajax POST toDivide
 

@@ -54,11 +54,25 @@ app.post('/toAdd', function(req, res){
   res.send(responseAdd);
 });
 
-app.post('/toDivideA', function(req, res){
+app.post('/fullCalculator', function(req, res){
   numOne = Number(req.body.numOne);
   numTwo = Number(req.body.numTwo);
-  var responseDivide = {
-    resultDivA: numOne / numTwo
-  };
-  res.send(responseDivide);
+  actType = req.body.actType;
+  var responseFull;
+  console.log(req.body);
+  if (actType === 'divide') {
+    responseFull = numOne / numTwo;
+    responseFull = String(responseFull);
+  }
+  else if (req.body.actType === 'multiply') {
+    responseFull = numOne * numTwo;
+  }
+  else if (req.body.actType === 'subtract') {
+    responseFull = numOne - numTwo;
+  }
+  else {
+    responseFull = numOne + numTwo;
+  }
+  console.log(responseFull);
+  res.send(responseFull);
 });
