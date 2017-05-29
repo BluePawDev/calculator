@@ -53,3 +53,12 @@ app.post('/toAdd', function(req, res){
   };
   res.send(responseAdd);
 });
+
+app.post('/toDivideA', function(req, res){
+  numOne = Number(req.body.numOne);
+  numTwo = Number(req.body.numTwo);
+  var responseDivide = {
+    resultDivA: numOne / numTwo
+  };
+  res.send(responseDivide);
+});

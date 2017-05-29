@@ -124,4 +124,100 @@ function onReady() {
     } // end of else
   }); // end of cmdAdd on-click
 
-} // end of onReady
+
+  /*** FULL CALCULATOR: START ***/
+  var value = '';
+  var valueOne = '';
+  var valueTwo = '';
+
+  $('#cmd7').on('click', function() {
+    value += '7';
+    console.log('cmd7 clicked:', value);
+    return $('#txtInputOneA').val(value);
+  });
+
+  $('#cmd8').on('click', function() {
+    value += '8';
+    console.log('cmd8 clicked:', value);
+    return $('#txtInputOneA').val(value);
+  });
+
+  $('#cmd9').on('click', function() {
+    value += '9';
+    console.log('cmd9 clicked:', value);
+    return $('#txtInputOneA').val(value);
+  });
+
+  $('#cmd4').on('click', function() {
+    value += '4';
+    console.log('cmd4 clicked:', value);
+    return $('#txtInputOneA').val(value);
+  });
+
+  $('#cmd5').on('click', function() {
+    value += '5';
+    console.log('cmd5 clicked:', value);
+    return $('#txtInputOneA').val(value);
+  });
+
+  $('#cmd6').on('click', function() {
+    value += '6';
+    console.log('cmd6 clicked:', value);
+    return $('#txtInputOneA').val(value);
+  });
+
+  $('#cmd1').on('click', function() {
+    value += '1';
+    console.log('cmd1 clicked:', value);
+    return $('#txtInputOneA').val(value);
+  });
+
+  $('#cmd2').on('click', function() {
+    value += '2';
+    console.log('cmd2 clicked:', value);
+    return $('#txtInputOneA').val(value);
+  });
+
+  $('#cmd3').on('click', function() {
+    value += '3';
+    console.log('cmd3 clicked:', value);
+    return $('#txtInputOneA').val(value);
+  });
+
+  // start of cmdDivide on-click
+  $('#cmdD').on('click', function() {
+    valueOne = value;
+    value = '';
+    $('#txtInputOneA').val('');
+    console.log('valueOne is:', valueOne);
+    console.log('value is:', value);
+  }); // end of cmdDivide on-click
+
+  $('#cmdEqual').on('click', function() {
+    valueTwo = value;
+    value = '';
+    console.log('valueTwo is:', valueTwo);
+    console.log('value is:', value);
+    // define obj to POST on divide
+    var objToDivideA = {
+      numOne: valueOne,
+      numTwo: valueTwo,
+      actType: 'divide'
+    }; // end of obj to divide
+    // Ajax POST toDivide definition
+    $.ajax({
+      type: 'POST',
+      url: '/toDivideA',
+      data: objToDivideA,
+      // define success
+      success: function(response) {
+        $('#txtInputOneA').val(response.resultDivA);
+      } // end of success definition
+    }); // end of Ajax POST toDivide
+
+
+    /*** FULL CALCULATOR: END ***/
+
+  }); // end of cmdEqual on-click
+
+}
