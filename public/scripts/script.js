@@ -248,6 +248,7 @@ function onReady() {
     value = '';
     console.log('valueTwo is:', valueTwo);
     console.log('value is:', value);
+    
     // define obj to POST on divide
     var objToOperate = {
       numOne: valueOne,
@@ -265,10 +266,7 @@ function onReady() {
         $('#txtInputOneA').val(response);
       } // end of success definition
     }); // end of Ajax POST toDivide
-
-
-    /*** FULL CALCULATOR: END ***/
-
   }); // end of cmdEqual on-click
+  /*** FULL CALCULATOR: START ***/
 
 }
