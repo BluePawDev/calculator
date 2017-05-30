@@ -4,7 +4,7 @@
 * Node.js
 * Express.js
 
-## BASE MODE
+## CALCULATION BY INPUT
 ### Front-end Interface/Display
 * Two values using input fields;
 * Four command buttons to select the desired mathematical operation (e.g. addition, subtraction, multiplication, and division) to use on the two input values, and;
@@ -26,10 +26,10 @@ The server--configured on port 7500--receives POST requests:
 
 
 
-## HARD MODE
+## CALCULATION VIA CALCULATOR INTERFACE
 ### Front-end Interface/Display
 * Basic full-function calculator interface
 
 #### Action/Logic
 ##### Client-side and Server-side
-* The general logic remains the same as in base mode
+* The general logic remains the same as above
