@@ -5,6 +5,8 @@ function onReady() {
   // set txtResult to disabled
   $('#txtResult').attr('disabled', 'disabled');
 
+  // Globals
+
   // start of cmdClear on-click
   $('#cmdClear').on('click', function() {
     // console.log('Clear clicked');
