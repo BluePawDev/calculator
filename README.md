@@ -1,8 +1,6 @@
 # Weekend Challenge 2
 ### Technologies Implemented
-* JavaScript/jQuery
-* Node.js
-* Express.js
+* JavaScript, jQuery, Node.js, Express.js
 
 ## CALCULATION BY INPUT
 ### Front-end Interface/Display
