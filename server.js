@@ -10,11 +10,10 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 // Listen
 app.listen(7500, function(){
-  console.log('server listening on port: 7500');
+  // console.log('server listening on port: 7500');
 });
 
 app.get('/', function(req, res){
-  console.log('base URL was hit');
   res.sendFile(path.resolve('views/index.html'));
 });
 
@@ -59,7 +58,6 @@ app.post('/fullCalculator', function(req, res){
   numTwo = Number(req.body.numTwo);
   actType = req.body.actType;
   var responseFull;
-  console.log(req.body);
   if (actType === 'divide') {
     responseFull = numOne / numTwo;
     responseFull = String(responseFull);
@@ -76,6 +74,5 @@ app.post('/fullCalculator', function(req, res){
     responseFull = numOne + numTwo;
     responseFull = String(responseFull);
   }
-  console.log(responseFull);
   res.send(responseFull);
 });

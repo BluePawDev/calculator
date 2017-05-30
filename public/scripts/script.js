@@ -227,7 +227,6 @@ function onReady() {
       data: objToOperate,
       // define success
       success: function(response) {
-        console.log(response);
         $('#txtInputOneA').val(response);
       } // end of success definition
     }); // end definition of Ajax POST
