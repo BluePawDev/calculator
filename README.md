@@ -33,10 +33,3 @@ The server--configured on port 7500--receives POST requests:
 #### Action/Logic
 ##### Client-side and Server-side
 * The general logic remains the same as in base mode
-
-
-## PRO MODE
-Create a delay from when the Client receives the response from the Server, and when the calculation is actually displayed on the Front End:
-* Delay should be 3 seconds.
-* During that delay, display a message that says computing until the 3-second delay has finished, then;
-* Remove the computing message while showing the calculation.
