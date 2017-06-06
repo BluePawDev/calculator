@@ -8,7 +8,7 @@ function onReady() {
   // Globals
 
   // start of cmdClear on-click
-  $('#cmdClear').on('click', function() {
+  $("'#cmdClear'").on('click', function() {
     // console.log('Clear clicked');
     $('#txtInputOne').val('');
     $('#txtInputTwo').val('');
