@@ -1,6 +1,6 @@
 # Weekend Challenge 2
 ### Deployed
-Heroku: [Server-side Calculators](https://server-side-calculator.herokuapp.com/)
+Heroku: [Server-side Calculators](https://calculator-server-side.herokuapp.com/)
 
 ### Technologies Implemented
 * JavaScript, jQuery, Node.js, Express.js
