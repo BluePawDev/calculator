@@ -1,6 +1,6 @@
 # Weekend Challenge 2
 ### Deployed
-Heroku: [Server-side Calculators](https://calculator-server-side.herokuapp.com/)
+Heroku: [Server-side Calculators](https://calculator-server-side.herokuapp.com/)[newtab]
 
 <a href="https://calculator-server-side.herokuapp.com/" target="_blank">Server-side Calculators</a>
 
