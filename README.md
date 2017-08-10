@@ -1,4 +1,4 @@
-![Server Side Calculator](/public/server-side-calculator.png}
+![Server Side Calculator](/public/server-side-calculator.png)
 
 # Weekend Challenge 2
 #### Date(s)
