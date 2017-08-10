@@ -1,29 +1,32 @@
+![Server Side Calculator](/public/server-side-calculator.png}
+
 # Weekend Challenge 2
+#### Date(s)
+05/27/17 - 05/30/17
 ### Deployed
 *Heroku*: [Server-side Calculators](https://calculator-server-side.herokuapp.com/)
-
+### Description
+Two calculators that accept input by different means and performs calcualtions/mathmatical operations on the server-side
 ### Technologies Implemented
-* JavaScript, jQuery, Node.js, Express.js
+- JavaScript, jQuery, Node.js, Express.js, HTML5, CSS3
 
-## CALCULATION BY INPUT
+## By Input
 ### Front-end Interface/Display
-* Two values using input fields;
-* Four command buttons to select the desired mathematical operation (e.g. addition, subtraction, multiplication, and division) to use on the two input values, and;
-* A clear button that resets the input fields
-
-#### Action/Logic
+- Two values using input fields;
+- Four command buttons to select desired mathematical operation (e.g. addition, subtraction, multiplication, and division) to use on two input values, and;
+- Clear button to resets input fields
 ##### Client-side
-* The client evaluates to ensure values are supplied in both input fields;
-* If values are present, the client submits a Ajax POST which places the:
-  * Two input values, and;
-  * The value of the selected mathematical operator into an object defined by the mathematical operator button that is selected;
-* The object is then sent to the server for calculation
-
+- Client evaluates to ensure values are supplied in both input fields;
+- If values are present, the client submits a Ajax POST which places the:
+  - Two input values, and;
+  - Value of the selected mathematical operator into an object defined by user-selected mathematical operator button;
+- Object then sent to server for calculation
 ##### Server-side
-The server--configured on port 7500--receives POST requests:
-* On URL-specific routes depending on the mathematical operator selected on the front-end;
-* After converting the object inputs into numeric values, performs the requested/required mathematical operation, then;
-* Performs a ```res.send``` of the result back to the client
+Server:
+- Receives POST requests on URL-specific routes depending on the mathematical operator selected;
+- Converts object inputs into numeric values;
+- Performs requested/required mathematical operation, then;
+- ```res.send``` result back to client
 
 
 
