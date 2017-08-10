@@ -6,7 +6,7 @@
 ### Deployed
 *Heroku*: [Server-side Calculators](https://calculator-server-side.herokuapp.com/)
 ### Description
-Two calculators that accept input by different means and performs calcualtions/mathmatical operations on the server-side
+Two calculators that accept input by different means and performs calculations/mathematical operations on the server-side
 ### Technologies Implemented
 - JavaScript, jQuery, Node.js, Express.js, HTML5, CSS3
 
